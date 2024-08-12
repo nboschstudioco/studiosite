@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
@@ -86,10 +87,11 @@
             <input id="subject" maxlength="80" name="subject" size="20" type="text" required />
 
             <label for="description">Description</label>
-            <textarea name="description" required></textarea>
             <small>Please describe what you're looking for and any context around the deadline such as campaigns, comms, or meetings.</small>
+            <textarea name="description" required></textarea>
+            
 
-            <label for="00NDn00000NVLYD">Client Due Date</label>
+            <label for="00NDn00000NVLYD">Due Date</label>
             <input id="00NDn00000NVLYD" name="00NDn00000NVLYD" size="12" type="text" required />
 
             <div class="g-recaptcha" data-sitekey="6LcONCUqAAAAALMDl-PNoFYY80Kxa6a1bKnkq6N2"></div><br>
